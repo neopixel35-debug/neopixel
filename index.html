@@ -2,47 +2,67 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domer Style | Fan Page</title>
+    <title>DOMER GRIEF | Офіційний сайт</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
+        <div class="logo">DOMER<span>HOST</span></div>
         <nav>
-            <div class="logo">DOMER <span>LIVE</span></div>
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Сервер</a></li>
-                <li><a href="#">Мерч</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
+            <a href="#home">Головна</a>
+            <a href="#store">Магазин</a>
+            <a href="#rules">Правила</a>
+            <a href="https://youtube.com/@domer" target="_blank">Ютуб</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>КРАЩИЙ МАЙНКРАФТ СЕРВЕР</h1>
-            <p>Заходь та грай разом зі мною! IP: <span>PLAY.DOMER.NET</span></p>
-            <div class="buttons">
-                <a href="#" class="btn btn-primary">Почати грати</a>
-                <a href="#" class="btn btn-secondary">Магазин донату</a>
+    <section id="home" class="hero">
+        <h1>DOMER <span class="red">GRIEF</span></h1>
+        <p>Найкраще виживання в Minecraft</p>
+        <div class="ip-box" onclick="copyIP()">
+            IP: <span id="server-ip">MC.DOMER.NET</span>
+            <small>(натисни, щоб скопіювати)</small>
+        </div>
+    </section>
+
+    <section id="store" class="content-section">
+        <h2>Оберіть привілей</h2>
+        <div class="cards-container">
+            <div class="shop-card">
+                <h3>VIP</h3>
+                <p class="price">50 грн</p>
+                <button class="buy-btn">Купити</button>
+            </div>
+            <div class="shop-card premium">
+                <h3>DOMER</h3>
+                <p class="price">500 грн</p>
+                <button class="buy-btn">Купити</button>
+            </div>
+            <div class="shop-card">
+                <h3>ADMIN</h3>
+                <p class="price">250 грн</p>
+                <button class="buy-btn">Купити</button>
             </div>
         </div>
     </section>
 
-    <section class="features">
-        <div class="card">
-            <h3>Унікальні івенти</h3>
-            <p>Гриферські розборки та розіграші кожен тиждень.</p>
-        </div>
-        <div class="card">
-            <h3>Стабільний FPS</h3>
-            <p>Оптимізована збірка для найслабших ПК.</p>
-        </div>
-        <div class="card">
-            <h3>Чесна гра</h3>
-            <p>Найкращий античіт та адекватна модерація.</p>
-        </div>
+    <section id="rules" class="content-section grey">
+        <h2>Правила сервера</h2>
+        <ul>
+            <li>1. Не використовувати чіти (бан назавжди)</li>
+            <li>2. Не ображати адміністрацію</li>
+            <li>3. Гриферство дозволено (це ж гриф-сервер!)</li>
+        </ul>
     </section>
+
+    <script>
+        function copyIP() {
+            const ip = document.getElementById('server-ip').innerText;
+            navigator.clipboard.writeText(ip);
+            alert('IP скопійовано! Заходь у гру.');
+        }
+    </script>
 </body>
 </html>
