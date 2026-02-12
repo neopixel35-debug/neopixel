@@ -1,104 +1,66 @@
+element.style {
+}
+@media only screen and (max-width: 1120px) {
+    #join_us {
+        -ms-grid-columns: 250px 1fr;
+        grid-template-columns: 250px 1fr;
+        -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        ". join_us_text"
+        ". copy_ip";
+    }
+}
+#join_us {
+    position: relative;
+    background: url(../images/top.webp) no-repeat right top, url(../images/bottom.webp) no-repeat left bottom, #fff;
+    background-size: 170px, 100px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px 1fr auto;
+    grid-template-columns: 250px 1fr auto;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-template-areas: ". join_us_text copy_ip";
+}
+section {
+    letter-spacing: 0.01em;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    border-bottom: #e4dbdb 4px solid;
+    padding: 60px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    margin-bottom: 24px;
+}
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Mazzard M";
+    color: #1b1712;
+}
+user agent stylesheet
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+<style>
+@font-face {
+    font-family: "Mazzard M";
+    src: url(../fonts/MazzardM-Medium.eot);
+    src: local("Mazzard M Medium"), local("MazzardM-Medium"), url(../fonts/MazzardM-Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/MazzardM-Medium.woff2) format("woff2"), url(../fonts/MazzardM-Medium.woff) format("woff"), url(../fonts/MazzardM-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
 }
 
-body {
-    background-color: #0f0f0f;
-    color: white;
-}
-
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ff0055;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.logo span {
-    color: #ff0055;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff0055;
-}
-
-.hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://wallpaperaccess.com/full/1384013.jpg'); /* Заміни на фон з Майнкрафту */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-    text-shadow: 3px 3px #ff0055;
-}
-
-.hero p span {
-    background: #ff0055;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 20px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: transform 0.2s;
-}
-
-.btn-primary { background: #ff0055; color: white; }
-.btn-secondary { border: 2px solid #ff0055; color: white; }
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 50px 10%;
-}
-
-.card {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    border-left: 5px solid #ff0055;
-}
