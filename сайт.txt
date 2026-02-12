@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domer Style | Fan Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">DOMER <span>LIVE</span></div>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Сервер</a></li>
+                <li><a href="#">Мерч</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>КРАЩИЙ МАЙНКРАФТ СЕРВЕР</h1>
+            <p>Заходь та грай разом зі мною! IP: <span>PLAY.DOMER.NET</span></p>
+            <div class="buttons">
+                <a href="#" class="btn btn-primary">Почати грати</a>
+                <a href="#" class="btn btn-secondary">Магазин донату</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Унікальні івенти</h3>
+            <p>Гриферські розборки та розіграші кожен тиждень.</p>
+        </div>
+        <div class="card">
+            <h3>Стабільний FPS</h3>
+            <p>Оптимізована збірка для найслабших ПК.</p>
+        </div>
+        <div class="card">
+            <h3>Чесна гра</h3>
+            <p>Найкращий античіт та адекватна модерація.</p>
+        </div>
+    </section>
+</body>
+</html>
